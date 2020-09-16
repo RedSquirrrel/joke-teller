@@ -5,6 +5,7 @@ const textMsg = document.getElementById('textMsg');
 // disable/enable button
 function toggleButton() {
   button.disabled = !button.disabled;
+  textMsg.style.display = 'none';
 }
 
 // passing Joke to VoiceRSS API
@@ -40,7 +41,7 @@ async function getJokes() {
     tellMe(joke);
     //disable button
     toggleButton();
-    textMsg.innerText = joke;
+    textMsg.textContent = joke;
     textMsg.style.display = 'flex';
   } catch (error) {
     console.log('error', error);

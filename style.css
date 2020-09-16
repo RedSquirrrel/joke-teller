@@ -64,6 +64,9 @@ button:disabled {
   background: rgba(255, 255, 255, 0.5);
   padding: 1rem 1.5rem;
   border-radius: 5px;
+  box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.2);
+  word-break: break-all;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1000px) {
@@ -78,7 +81,7 @@ button:disabled {
   }
 
   #textMsg {
-    width: 100%;
+    width: 90%;
     text-align: center;
     margin-left: 1rem;
     margin-right: 1rem;
